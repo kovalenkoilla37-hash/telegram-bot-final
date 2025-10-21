@@ -6,9 +6,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
 # Настройки
-TOKEN = os.environ.get("8313231784:AAHjAafo4lU-M7gPrAdcEVfyY5GxeSncLeo
-")
-ADMIN_CHAT_ID = os.environ.get("-4849060567")
+TOKEN = os.environ.get("TOKEN")
+ADMIN_CHAT_ID = os.environ.get("ADMIN_CHAT_ID")
+
 if not TOKEN or not ADMIN_CHAT_ID:
     raise RuntimeError("Set TOKEN and ADMIN_CHAT_ID environment variables")
 ADMIN_CHAT_ID = int(ADMIN_CHAT_ID)
